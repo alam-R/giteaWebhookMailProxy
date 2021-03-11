@@ -6,7 +6,8 @@ This is received by giteaWebhookMailProxy and is forwarded as a mail to custom r
 There is only one endpoint:
 "/webhooktomail",
 so the POST webhook should be like:
-http://localhost:<port>/webhooktomail
+http://localhost:<port_of_mail_service>/webhooktomail
+
 giteaWebhookMailProxy assumes that mail service is configured and run on localhost, port is configurable (configured by application.properties).
 
 Mail format is fixed at the moment:
