@@ -13,3 +13,5 @@ giteaWebhookMailProxy assumes that mail service is configured and run on localho
 Mail format is fixed at the moment:
 <user_pusher> pushed to <branch_pushed> at <repo_of_branch> 
 <sha_commited> <message_commited>
+
+Tested on 1.13.3 Gitea
