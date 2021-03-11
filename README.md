@@ -10,5 +10,5 @@ http://localhost:<port>//webhooktomail
 giteaWebhookMailProxy assumes that mail service is configured and run on localhost, port is configurable (configured by application.properties).
 
 Mail format is fixed at the moment:
-'<user_pusher>' pushed to '<branch>' at '<repo>' 
-'<sha>' '<message>'
+<user_pusher> pushed to <branch_pushed> at <repo_of_branch> 
+<sha_commited> <message_commited>
