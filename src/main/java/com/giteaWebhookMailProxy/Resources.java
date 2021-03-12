@@ -42,7 +42,7 @@ public class Resources {
 
         if (body.getPusher() != null) {
             log.debug("Sending mail");
-            log.error(body.getPusher().getUsername());
+
             StringBuilder shas = new StringBuilder("");
             
             body.getCommits().forEach(
@@ -64,7 +64,7 @@ public class Resources {
                 message.setText(content);
 
                 for (String r: recipientsArray) {           
-                    log.error("Sending mail to: "+r);
+                    log.debug("Sending mail to: "+r);
                     message.setTo(r);
                     emailSender.send(mimeMessage);
                 }
